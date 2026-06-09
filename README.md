@@ -58,10 +58,10 @@ Listings with fewer than 5 reviews are excluded from revenue estimates (insuffic
 59.3% of listings belong to multi-property hosts; 9.1% belong to hosts operating 21+ properties. Single-listing hosts are a minority (40.7%).
 
 **2. Centro Storico is the biggest prize and the hardest fight.**
-The historic center holds **49% of all entire-home supply** (12,619 listings) with the highest median price (EUR 182/night) and the highest estimated revenue (EUR 2,470/month). Entry there means maximum acquisition costs and maximum competition.
+The historic center holds **49% of all entire-home supply** (12,619 listings) with the highest median price (EUR 182/night) and the highest estimated revenue (EUR 2,470/month). Entry there means maximum acquisition costs and maximum competition. Inside Airbnb's own trailing-12-month estimates confirm the gap in actuals: median EUR 21.3k of Jubilee-year revenue in Centro Storico versus EUR 8–10k in the next-best districts.
 
 **3. The best risk-adjusted entry points are XIII Aurelia and VII San Giovanni/Cinecittà.**
-Aurelia (bordering the Vatican) ranks **#2 in estimated revenue (EUR 1,517/month)** with ~9x less competition than the center (1,366 analyzed listings) and a median price of only EUR 126/night. San Giovanni/Cinecittà ranks #4 (EUR 1,305/month). Both deliver 60–85% of central revenue at a fraction of the competitive density.
+Aurelia (bordering the Vatican) ranks **#2 in estimated revenue (EUR 1,517/month)** with ~9x less competition than the center (1,366 analyzed listings) and a median price of only EUR 126/night. San Giovanni/Cinecittà ranks #4 (EUR 1,305/month). By the review-based model they deliver 60–85% of central revenue; by Inside Airbnb's actual trailing-12-month estimates, ~40–50% (Aurelia EUR 9.8k/year, San Giovanni EUR 8.2k/year vs Centro EUR 21.3k) — still at a fraction of the competitive density and acquisition cost.
 
 **4. 5–6 guest apartments are the capacity sweet spot.**
 They earn a median EUR 2,004/month — **+30% vs the crowded 3–4 guest segment** (EUR 1,539, 9,408 listings) — while facing half the competition (4,626 listings). 7+ capacity tops absolute revenue (EUR 2,952) but is a niche with the lowest revenue per guest (EUR 352 vs EUR 757 for 1–2).
@@ -74,7 +74,7 @@ They earn a median EUR 2,004/month — **+30% vs the crowded 3–4 guest segment
 
 ## Recommendation
 
-Enter via **XIII Aurelia or VII San Giovanni/Cinecittà** with **entire apartments for 5–6 guests**, priced around the district band (EUR 110–150/night) with seasonal dynamic pricing (premium March–October, discounts December–February). Expected estimated revenue: **EUR 1.5–2.0k per month per unit** under the stated occupancy model. Obtain the national CIN license before listing. Avoid Centro Storico for initial entry unless pursuing a premium-positioning strategy with capital to match 10,000+ professional competitors.
+Enter via **XIII Aurelia or VII San Giovanni/Cinecittà** with **entire apartments for 5–6 guests**, priced around the district band (EUR 110–150/night) with seasonal dynamic pricing (premium March–October, discounts December–February). Expected estimated revenue: **EUR 1.5–2.0k per month per unit** under the stated occupancy model. Obtain the national CIN license before listing. Centro Storico generates roughly double the revenue of any other district in actuals, but entry there means competing with 10,000+ professionally managed listings at the highest acquisition costs; a final district decision would require property acquisition/rental cost data, which is outside this dataset.
 
 ## Limitations
 
@@ -82,6 +82,7 @@ Enter via **XIII Aurelia or VII San Giovanni/Cinecittà** with **entire apartmen
 - **Calendar prices are empty in this snapshot**, so seasonality is measured through availability (blocked share) only. "Blocked" mixes real bookings with host-blocked dates, and closer months are naturally more booked — the curve is a forward booking indicator, not a pure demand series.
 - License display is self-reported by hosts and not verified against the official registry.
 - One snapshot, one city: results describe Rome as of September 2025 and the surrounding Jubilee-year demand environment.
+- The review-based revenue model runs roughly 20–40% above Inside Airbnb's own trailing-12-month estimates; both figures are reported where relevant. The trailing-12-month window also coincides with the Jubilee year, so it likely represents a demand peak rather than a steady state.
 
 ## Repository structure
 
