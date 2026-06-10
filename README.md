@@ -12,12 +12,12 @@ Market-entry analysis of 32,902 active Airbnb listings in Rome (Inside Airbnb sn
 
 ## Business context
 
-A property-management company is evaluating entry into Rome's short-term rental market. This analysis answers four questions an investor would actually ask:
+A property-management company is evaluating entry into Rome's short-term rental market. This analysis answers four questions an investor would ask:
 
-1. **Where** — which districts offer the best revenue potential relative to competition?
-2. **What** — which property configuration (room type, guest capacity) maximizes revenue?
-3. **When / how to price** — what does the forward booking curve imply for pricing strategy?
-4. **Who we compete with** — how professionalized and how regulated is the market?
+1. **Where:** which districts offer the best revenue potential relative to competition?
+2. **What:** which property configuration (room type, guest capacity) maximizes revenue?
+3. **When and how to price:** what does the forward booking curve imply for pricing strategy?
+4. **Who we compete with:** how professionalized and how regulated is the market?
 
 ## Data
 
@@ -28,7 +28,7 @@ A property-management company is evaluating entry into Rome's short-term rental 
 | `reviews.csv` | 2,193,330 | Full review history (demand proxy) |
 | `neighbourhoods.geojson` | 15 districts | Municipio boundaries for mapping |
 
-Snapshot date: **14 September 2025** (Inside Airbnb, CC BY 4.0). The trailing 12 months covered by review-based estimates coincide almost exactly with Rome's **Jubilee year** — a record tourism period — while the forward calendar covers the first post-Jubilee year.
+Snapshot date: **14 September 2025** (Inside Airbnb, CC BY 4.0). The trailing 12 months covered by review-based estimates fall within Rome's **Jubilee year**, a record tourism period. The forward calendar covers the first post-Jubilee year.
 
 **Cleaning:** dropped listings without a usable price (11% of raw) and trimmed price outliers to the 1st–99th percentile window (EUR 41–1,006), keeping 32,902 listings.
 
@@ -54,35 +54,35 @@ Listings with fewer than 5 reviews are excluded from revenue estimates (insuffic
 
 ## Key findings
 
-**1. The market is professionalized — you compete with companies, not hobbyists.**
-59.3% of listings belong to multi-property hosts; 9.1% belong to hosts operating 21+ properties. Single-listing hosts are a minority (40.7%).
+**1. Professional operators control the market.**
+59.3% of listings belong to multi-property hosts; 9.1% belong to hosts operating 21+ properties. Single-listing hosts are a minority (40.7%). A new entrant competes with companies.
 
-**2. Centro Storico is the biggest prize and the hardest fight.**
-The historic center holds **49% of all entire-home supply** (12,619 listings) with the highest median price (EUR 182/night) and the highest estimated revenue (EUR 2,470/month). Entry there means maximum acquisition costs and maximum competition. Inside Airbnb's own trailing-12-month estimates confirm the gap in actuals: median EUR 21.3k of Jubilee-year revenue in Centro Storico versus EUR 8–10k in the next-best districts.
+**2. Centro Storico pairs the highest revenue with the heaviest competition.**
+The historic center holds **49% of all entire-home supply** (12,619 listings) with the highest median price (EUR 182/night) and the highest estimated revenue (EUR 2,470/month). Inside Airbnb's own trailing-12-month estimates confirm the gap in actuals: median EUR 21.3k of Jubilee-year revenue in Centro Storico versus EUR 8–10k in the next-best districts. Entry there means maximum acquisition costs against maximum competition.
 
-**3. The best risk-adjusted entry points are XIII Aurelia and VII San Giovanni/Cinecittà.**
-Aurelia (bordering the Vatican) ranks **#2 in estimated revenue (EUR 1,517/month)** with ~9x less competition than the center (1,366 analyzed listings) and a median price of only EUR 126/night. San Giovanni/Cinecittà ranks #4 (EUR 1,305/month). By the review-based model they deliver 60–85% of central revenue; by Inside Airbnb's actual trailing-12-month estimates, ~40–50% (Aurelia EUR 9.8k/year, San Giovanni EUR 8.2k/year vs Centro EUR 21.3k) — still at a fraction of the competitive density and acquisition cost.
+**3. XIII Aurelia and VII San Giovanni/Cinecittà offer the best risk-adjusted entry.**
+Aurelia (bordering the Vatican) ranks **#2 in estimated revenue (EUR 1,517/month)** with ~9x less competition than the center (1,366 analyzed listings) and a median price of EUR 126/night. San Giovanni/Cinecittà ranks #4 (EUR 1,305/month). The review-based model puts them at 60–85% of central revenue; Inside Airbnb's trailing-12-month estimates put them at ~40–50% (Aurelia EUR 9.8k/year, San Giovanni EUR 8.2k/year vs Centro EUR 21.3k), still at a fraction of the competitive density and acquisition cost.
 
 **4. 5–6 guest apartments are the capacity sweet spot.**
-They earn a median EUR 2,004/month — **+30% vs the crowded 3–4 guest segment** (EUR 1,539, 9,408 listings) — while facing half the competition (4,626 listings). 7+ capacity tops absolute revenue (EUR 2,952) but is a niche with the lowest revenue per guest (EUR 352 vs EUR 757 for 1–2).
+They earn a median EUR 2,004/month, +30% over the crowded 3–4 guest segment (EUR 1,539 across 9,408 listings), while facing half the competition (4,626 listings). 7+ capacity tops absolute revenue (EUR 2,952) but forms a niche with the lowest revenue per guest (EUR 352 vs EUR 757 for 1–2).
 
-**5. The forward booking curve argues for aggressive dynamic pricing.**
-74% of the next 30 days are already blocked/booked, falling to ~28% for December–February and standing at ~49% for the following summer a year out. Winter is the soft spot; summer demand books far in advance.
+**5. Winter is the soft spot; summer books far in advance.**
+74% of the next 30 days are already blocked or booked. The share falls to ~28% for December–February and stands at ~49% for the following summer a year out. The curve supports seasonal dynamic pricing: premium in high season, discounts in winter.
 
-**6. Licensing (CIN) is table stakes, not a differentiator.**
-95.4% of listings display a license code; even the lowest district (EUR business area) shows 84.5%. Operating unlicensed is not a viable strategy in Rome.
+**6. Licensing (CIN) is a baseline requirement.**
+95.4% of listings display a license code; even the lowest district (EUR business area) shows 84.5%. An unlicensed listing would compete in a 95%-licensed market.
 
 ## Recommendation
 
-Enter via **XIII Aurelia or VII San Giovanni/Cinecittà** with **entire apartments for 5–6 guests**, priced around the district band (EUR 110–150/night) with seasonal dynamic pricing (premium March–October, discounts December–February). Expected estimated revenue: **EUR 1.5–2.0k per month per unit** under the stated occupancy model. Obtain the national CIN license before listing. Centro Storico generates roughly double the revenue of any other district in actuals, but entry there means competing with 10,000+ professionally managed listings at the highest acquisition costs; a final district decision would require property acquisition/rental cost data, which is outside this dataset.
+Enter via **XIII Aurelia or VII San Giovanni/Cinecittà** with **entire apartments for 5–6 guests**, priced within the district band (EUR 110–150/night) and repriced seasonally: premium March–October, discounts December–February. Expected estimated revenue: **EUR 1.5–2.0k per month per unit** under the stated occupancy model. Obtain the national CIN license before listing. Centro Storico generates about double the revenue of any other district in actuals, but entry there means competing with 10,000+ professionally managed listings at the highest acquisition costs. A final district decision would require property acquisition and rental cost data, which sits outside this dataset.
 
 ## Limitations
 
 - **No actual booking data exists publicly.** Revenue figures are model estimates from review velocity; assumptions are stated above and in `sql/03_analysis.sql`.
-- **Calendar prices are empty in this snapshot**, so seasonality is measured through availability (blocked share) only. "Blocked" mixes real bookings with host-blocked dates, and closer months are naturally more booked — the curve is a forward booking indicator, not a pure demand series.
-- License display is self-reported by hosts and not verified against the official registry.
+- **Calendar prices are empty in this snapshot**, so seasonality is measured through availability (blocked share) only. "Blocked" mixes real bookings with host-blocked dates, and closer months carry more accumulated bookings, so the curve indicates forward bookings rather than pure demand.
+- Hosts self-report the license field; this analysis does not verify it against the official registry.
 - One snapshot, one city: results describe Rome as of September 2025 and the surrounding Jubilee-year demand environment.
-- The review-based revenue model runs roughly 20–40% above Inside Airbnb's own trailing-12-month estimates; both figures are reported where relevant. The trailing-12-month window also coincides with the Jubilee year, so it likely represents a demand peak rather than a steady state.
+- The review-based revenue model runs 20–40% above Inside Airbnb's own trailing-12-month estimates; both figures appear where relevant. The trailing-12-month window also falls within the Jubilee year, so it captures a demand peak rather than a steady state.
 
 ## Repository structure
 
@@ -94,7 +94,7 @@ Enter via **XIII Aurelia or VII San Giovanni/Cinecittà** with **entire apartmen
 ├── sql/
 │   ├── 01_schema.sql      # staging tables
 │   ├── 02_transform.sql   # typed tables, indexes, monthly aggregates
-│   └── 03_analysis.sql    # 7 analytical queries (documented)
+│   └── 03_analysis.sql    # analytical queries (documented)
 ├── dashboard/             # dashboard screenshot
 └── requirements.txt
 ```
@@ -129,5 +129,5 @@ Data by [Inside Airbnb](https://insideairbnb.com), licensed under [CC BY 4.0](ht
 
 ---
 
-**Author:** Mukhammed Yesmukhanbet — MSc Management, Finance and Data Analytics (LUMSA, Rome)
+**Author:** Mukhammed Yesmukhanbet, MSc Management, Finance and Data Analytics (LUMSA, Rome)
 [LinkedIn](https://www.linkedin.com/in/myesmukhanbet) · [GitHub](https://github.com/m-yesmukhanbet)
