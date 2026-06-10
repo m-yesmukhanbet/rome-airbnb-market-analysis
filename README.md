@@ -4,7 +4,7 @@
 
 Market-entry analysis of 32,902 active Airbnb listings in Rome (Inside Airbnb snapshot, 14 September 2025), built on a PostgreSQL pipeline processing 13.7M calendar rows and 2.2M reviews.
 
-**[Interactive dashboard on Tableau Public](ADD_LINK_AFTER_PUBLISHING)**
+**[Interactive dashboard on Tableau Public]https://public.tableau.com/views/RomeShort-TermRentalMarketAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link**
 
 ![Dashboard](dashboard/dashboard.png)
 

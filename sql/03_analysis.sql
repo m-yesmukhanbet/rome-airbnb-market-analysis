@@ -120,3 +120,16 @@ FROM listings
 GROUP BY neighbourhood_cleansed
 HAVING count(*) >= 30
 ORDER BY pct_with_license DESC;
+
+-- ============================================================
+-- Q8. Actual revenue estimate by neighbourhood
+-- ============================================================
+SELECT
+    neighbourhood_cleansed AS neighbourhood,
+    count(*) AS listings,
+    round(percentile_cont(0.5) WITHIN GROUP (ORDER BY estimated_revenue_l365d)) AS median_actual_rev_l365d
+FROM listings
+WHERE room_type = 'Entire home/apt' AND estimated_revenue_l365d > 0
+GROUP BY 1
+HAVING count(*) >= 30
+ORDER BY 3 DESC;
